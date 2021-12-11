@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.divison{
+    flex: 20%;
+    max-width: 20%;
+}
+.itm1{
+    flex: 40%;
+    max-width: 40%;
+}
+.image{
+    width: 100%;
+}
