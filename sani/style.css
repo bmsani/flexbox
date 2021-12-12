@@ -5,15 +5,30 @@ body{
 main{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+}
+.divide-con{
+    display: flex;
+    flex: 60%;
+    flex-wrap: wrap;
+
 }
 .divison{
-    flex: 20%;
-    max-width: 20%;
+    flex: 33%;
+    max-width: 33%;
+    height: 50vh;
+    background-color: antiquewhite;
+    overflow: hidden;
+    
 }
 .itm1{
     flex: 40%;
     max-width: 40%;
+    height: 100vh;
+    overflow: hidden;
+}
+.itm5{
+    flex:100%;
+    max-width: 100%;
 }
 .image{
     width: 100%;
