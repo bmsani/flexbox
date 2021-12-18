@@ -2,34 +2,70 @@ body{
     margin: 0;
     padding: 0;
 }
-main{
-    display: flex;
-    flex-wrap: wrap;
-}
-.divide-con{
-    display: flex;
-    flex: 60%;
-    flex-wrap: wrap;
 
+.just-bg{
+    height: 100vh;
+    background: url(../img/pexels-alex-azabache-5117913.jpg);
+    background-position: center;
+    background-size: cover;
 }
-.divison{
-    flex: 33%;
-    max-width: 33%;
-    height: 50vh;
-    background-color: antiquewhite;
-    overflow: hidden;
+
+.logo{
+    margin: 2rem;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     
 }
-.itm1{
-    flex: 40%;
-    max-width: 40%;
-    height: 100vh;
-    overflow: hidden;
+.primary-navigation{
+    display: flex;
+    column-gap: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: hsl(0 0% 100%/0.1);
+        backdrop-filter: blur(0.1rem);
 }
-.itm5{
-    flex:100%;
-    max-width: 100%;
+
+.primary-navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
-.image{
-    width: 100%;
+
+.primary-navigation a [aria-hidden="true"] {
+    font-weight: 700;
+    color: white;
+    margin-inline-end: 0.75em;
+    
+}
+
+@media (max-width: 35em) {
+    .primary-navigation {
+        position: fixed;
+        inset: 0 0 0 30%;
+        z-index: 1000;
+
+        flex-direction: column;
+        gap: 1em;
+        font-size: 24px;
+        padding: min(30vh, 10rem) 2em;
+        background: hsl(0 0% 100%/0.1);
+        backdrop-filter: blur(0.1rem);
+    }
+
+    .mobile-nav-toggle{
+        position: absolute;
+        background: url(../img/icons8-menu.svg);
+        background-size: cover;
+        border: 0;
+        z-index: 9999;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+    }
 }
